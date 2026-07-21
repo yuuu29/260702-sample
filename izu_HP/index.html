@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IZU Travel</title>
+
+    <link rel="stylesheet" href="home.css">
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!--==============================
+BACKGROUND
+===============================-->
+
+<div class="bg">
+
+    <div class="grid"></div>
+
+    <div class="water water1"></div>
+    <div class="water water2"></div>
+    <div class="water water3"></div>
+    <div class="water water4"></div>
+
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+    <div class="circle c3"></div>
+
+    <svg class="wave wave-top"
+        viewBox="0 0 1440 180"
+        preserveAspectRatio="none">
+
+        <path
+            d="M0,90
+            C180,180
+            320,10
+            560,90
+            C780,170
+            1080,20
+            1440,110"/>
+
+    </svg>
+
+</div>
+
+<!--==============================
+HEADER
+===============================-->
+
+<header class="header">
+
+    <div class="logo">
+
+        <a href="index.html">
+
+            IZU
+
+        </a>
+
+    </div>
+
+    <nav class="nav">
+
+        <ul>
+
+            <li><a href="index.html">TOP</a></li>
+
+            <li><a href="sea.html">SEA</a></li>
+
+            <li><a href="spot.html">SPOT</a></li>
+
+            <li><a href="stay.html">STAY</a></li>
+
+            <li><a href="things.html">THINGS TO DO</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!--==============================
+MAIN
+===============================-->
+
+<main>
+
+<!--==============================
+HERO
+===============================-->
+
+<section class="hero">
+
+    <!-- 左 -->
+
+    <div class="hero__content fade">
+
+        <p class="hero__sub">
+
+            SHIZUOKA ・ IZU
+
+        </p>
+
+        <h1>
+
+            はじめての<br>
+
+            伊豆を、<br>
+
+            もっと自由に。
+
+        </h1>
+
+        <p class="hero__text">
+
+            海・自然・温泉・グルメ。
+
+            初めて訪れる人でも楽しめる
+            伊豆の魅力を集めました。
+
+        </p>
+
+        <a href="#sea" class="heroButton">
+
+            伊豆を旅してみる
+
+        </a>
+
+    </div>
+
+    <!-- 右 -->
+
+    <div class="hero__visual fade">
+
+        <!-- 水色背景 -->
+
+        <div class="heroShape"></div>
+
+        <!-- ブロブ画像 -->
+
+        <div class="blob">
+
+            <svg
+                viewBox="0 0 600 600"
+                xmlns="http://www.w3.org/2000/svg">
+
+                <defs>
+
+                    <clipPath id="heroBlob">
+
+                        <path d="
+                        M474,146
+                        C560,254
+                        530,430
+                        360,510
+
+                        C180,590
+                        18,452
+                        35,255
+
+                        C48,48
+                        258,-40
+                        474,146Z"/>
+
+                    </clipPath>
+
+                </defs>
+
+                <image
+
+                    href="assets/hero/hero.jpg"
+
+                    width="600"
+
+                    height="600"
+
+                    preserveAspectRatio="xMidYMid slice"
+
+                    clip-path="url(#heroBlob)"/>
+
+            </svg>
+
+        </div>
+
+        <!-- 装飾 -->
+
+        <div class="deco deco1"></div>
+        <div class="deco deco2"></div>
+        <div class="deco deco3"></div>
+
+    </div>
+
+</section>
+
+<!-- Scroll -->
+
+<div class="scroll">
+
+    <span>SCROLL</span>
+
+    <div class="scrollBar"></div>
+
+</div>
+
+<!--=================================
+SEA
+==================================-->
+
+<section class="sea" id="sea">
+
+    <div class="sectionBg sectionBg1"></div>
+
+    <div class="sectionHead fade">
+
+    <div class="sectionTop">
+
+        <div>
+
+            <span class="sectionSub">
+                SEA
+            </span>
+
+            <h2>
+                透き通る青い海で、
+                心ほどける時間を。
+            </h2>
+
+        </div>
+
+        <a href="sea.html" class="sectionMore">
+
+            VIEW MORE
+
+            <span>→</span>
+
+        </a>
+
+    </div>
+
+    <p>
+
+        伊豆には透明度の高い海や、
+        ゆったりと過ごせるビーチが数多くあります。
+
+    </p>
+
+</div>
+
+    <div class="seaCards">
+
+        <article class="seaCard fade">
+
+            <div class="seaImage">
+
+                <img src="assets/sea/sea1.jpg" alt="白浜海岸">
+
+            </div>
+
+            <div class="seaText">
+
+                <span>SEA 01</span>
+
+                <h3>
+
+                    白浜海岸
+
+                </h3>
+
+                <p>
+
+                    白い砂浜とエメラルドグリーンの海が広がる、
+                    伊豆を代表する人気ビーチ。
+
+                </p>
+
+                <a href="sea.html">
+
+                    VIEW MORE →
+
+                </a>
+
+            </div>
+
+        </article>
+
+        <article class="seaCard fade">
+
+            <div class="seaImage">
+
+                <img src="assets/sea/sea2.jpg" alt="入田浜">
+
+            </div>
+
+            <div class="seaText">
+
+                <span>SEA 02</span>
+
+                <h3>
+
+                    ヒリゾ浜
+
+                </h3>
+
+                <p>
+
+                    船で行く透き通った海。
+                    シュノーケルを楽しめる。
+
+                </p>
+
+                <a href="sea.html">
+
+                    VIEW MORE →
+
+                </a>
+
+            </div>
+
+        </article>
+
+        <article class="seaCard fade">
+
+            <div class="seaImage">
+
+                <img src="assets/sea/sea3.jpg" alt="外浦海岸">
+
+            </div>
+
+            <div class="seaText">
+
+                <span>SEA 03</span>
+
+                <h3>
+
+                    吉佐美大浜
+
+                </h3>
+
+                <p>
+
+                    落ち着いた雰囲気の海岸。
+                    綺麗な海では波に乗ることもできる。
+
+                </p>
+
+                <a href="sea.html">
+
+                    VIEW MORE →
+
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!--=================================
+Wave
+==================================-->
+
+<div class="waveSection">
+
+    <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
+
+        <path
+        d="
+        M0,90
+        C180,160
+        420,20
+        700,100
+
+        C920,170
+        1180,30
+        1440,110
+        ">
+
+        </path>
+
+    </svg>
+
+</div>
+
+
+<!--=================================
+SPOT
+==================================-->
+
+<section class="spot" id="spot">
+
+    <<div class="sectionHead fade">
+
+    <div class="sectionTop">
+
+        <div>
+
+            <span class="sectionSub">
+
+                SPOT
+
+            </span>
+
+            <h2>
+
+                伊豆でしか出会えない、
+                絶景スポット。
+
+            </h2>
+
+        </div>
+
+        <a href="spot.html" class="sectionMore">
+
+            VIEW MORE
+
+            <span>→</span>
+
+        </a>
+
+    </div>
+
+</div>
+
+    <div class="spotWrap">
+
+        <div class="spotLeft fade">
+
+            <img src="assets/spot/spot1.jpg" alt="">
+
+        </div>
+
+        <div class="spotRight fade">
+
+            <div class="spotItem">
+
+                <img src="assets/spot/spot2.jpg" alt="">
+
+                <div>
+
+                    <h3>
+
+                        堂ヶ島
+
+                    </h3>
+
+                    <p>
+
+                        遊覧船で行く、
+                        綺麗な洞窟に圧倒される。
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="spotItem">
+
+                <img src="assets/spot/spot3.jpg" alt="">
+
+                <div>
+
+                    <h3>
+
+                        修善寺
+
+                    </h3>
+
+                    <p>
+
+                        歴史を感じる、
+                        人気の観光スポット。
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=================================
+STAY
+==================================-->
+
+<section class="stay" id="stay">
+
+    <div class="sectionBg sectionBg2"></div>
+
+   <div class="sectionHead fade">
+
+    <div class="sectionTop">
+
+        <div>
+
+            <span class="sectionSub">
+
+                STAY
+
+            </span>
+
+            <h2>
+
+                景色も、温泉も、
+                心からくつろげる宿へ。
+
+            </h2>
+
+        </div>
+
+        <a href="stay.html" class="sectionMore">
+
+            VIEW MORE
+
+            <span>→</span>
+
+        </a>
+
+    </div>
+
+    <p>
+
+        オーシャンビューのホテルや、
+        伊豆ならではの宿をご紹介します。
+
+    </p>
+
+</div>
+
+    <div class="stayGrid">
+
+        <article class="stayCard fade">
+
+            <div class="stayImage">
+
+                <img src="assets/stay/stay1.png" alt="">
+
+            </div>
+
+            <div class="stayContent">
+
+                <span>HOTEL</span>
+
+                <h3>Ocean View Hotel</h3>
+
+                <p>
+
+                    海を眺めながら
+                    ゆっくり過ごせる人気ホテル。
+
+                </p>
+
+                <a href="stay.html">
+
+                    VIEW MORE →
+
+                </a>
+
+            </div>
+
+        </article>
+
+        <article class="stayCard fade">
+
+            <div class="stayImage">
+
+                <img src="assets/stay/stay2.png" alt="">
+
+            </div>
+
+            <div class="stayContent">
+
+                <span>RESORT</span>
+
+                <h3>Forest Resort</h3>
+
+                <p>
+
+                    自然に囲まれた
+                    癒やしのリゾートホテル。
+
+                </p>
+
+                <a href="stay.html">
+
+                    VIEW MORE →
+
+                </a>
+
+            </div>
+
+        </article>
+
+        <article class="stayCard fade">
+
+            <div class="stayImage">
+
+                <img src="assets/stay/stay3.png" alt="">
+
+            </div>
+
+            <div class="stayContent">
+
+                <span>RYOKAN</span>
+
+                <h3>Japanese Ryokan</h3>
+
+                <p>
+
+                    温泉と和食を楽しめる、
+                    落ち着いた旅館。
+
+                </p>
+
+                <a href="stay.html">
+
+                    VIEW MORE →
+
+                </a>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!--=================================
+THINGS TO DO
+==================================-->
+
+<section class="things" id="things">
+
+    <div class="sectionHead fade">
+
+    <div class="sectionTop">
+
+        <div>
+
+            <span class="sectionSub">
+
+                THINGS TO DO
+
+            </span>
+
+            <h2>
+
+                伊豆をもっと楽しもう。
+
+            </h2>
+
+        </div>
+
+        <a href="things.html" class="sectionMore">
+
+            VIEW MORE
+
+            <span>→</span>
+
+        </a>
+
+    </div>
+
+    <p>
+
+        海だけじゃない、
+        伊豆ならではの体験をご紹介します。
+
+    </p>
+
+</div>
+
+    <div class="thingsGrid">
+
+        <div class="thing fade">
+
+            <div class="thingIcon">
+
+                <img src="assets/things/hanabi.png">
+
+            </div>
+
+            <h3>花火</h3>
+
+        </div>
+
+        <div class="thing fade">
+
+            <div class="thingIcon">
+
+                <img src="assets/things/snorkel.png">
+
+            </div>
+
+            <h3>シュノーケリング</h3>
+
+        </div>
+
+        <div class="thing fade">
+
+            <div class="thingIcon">
+
+                <img src="assets/things/surf.png">
+
+            </div>
+
+            <h3>サーフィン</h3>
+
+        </div>
+
+        <div class="thing fade">
+
+            <div class="thingIcon">
+
+                <img src="assets/things/camera.png">
+
+            </div>
+
+            <h3>写真</h3>
+
+        </div>
+
+        <div class="thing fade">
+
+            <div class="thingIcon">
+
+                <img src="assets/things/onsen.png">
+
+            </div>
+
+            <h3>温泉</h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--=================================
+FOOTER
+==================================-->
+
+<footer class="footer">
+
+    <div class="footerLogo">
+
+        IZU
+
+    </div>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="index.html">TOP</a></li>
+
+            <li><a href="sea.html">SEA</a></li>
+
+            <li><a href="spot.html">SPOT</a></li>
+
+            <li><a href="stay.html">STAY</a></li>
+
+            <li><a href="things.html">THINGS TO DO</a></li>
+
+        </ul>
+
+    </nav>
+
+    <p>
+
+        © 2026 IZU Travel
+
+    </p>
+
+</footer>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+

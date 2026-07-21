@@ -1,0 +1,1269 @@
+/*=========================================
+SPOT PAGE
+=========================================*/
+
+body{
+
+    font-family:"Noto Sans JP",sans-serif;
+
+    color:#555;
+
+    background:#fffdf9;
+
+    overflow-x:hidden;
+
+}
+
+
+/*=========================================
+BACKGROUND GRID
+=========================================*/
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background-image:
+
+    linear-gradient(rgba(181,206,182,.08) 1px,transparent 1px),
+
+    linear-gradient(90deg,rgba(181,206,182,.08) 1px,transparent 1px);
+
+    background-size:80px 80px;
+
+    z-index:-3;
+
+}
+
+
+/* Watercolor */
+
+body::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:650px;
+
+    height:650px;
+
+    left:-180px;
+
+    top:250px;
+
+    border-radius:50%;
+
+    background:#eef8ef;
+
+    filter:blur(110px);
+
+    z-index:-2;
+
+}
+
+
+/*=========================================
+HEADER
+=========================================*/
+
+.header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 6%;
+
+    background:rgba(255,255,255,.45);
+
+    backdrop-filter:blur(15px);
+
+    z-index:999;
+
+}
+
+
+.logo{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:45px;
+
+    letter-spacing:8px;
+
+    color:#79b691;
+
+}
+
+
+.nav ul{
+
+    display:flex;
+
+    gap:45px;
+
+}
+
+
+.nav a{
+
+    color:#555;
+
+    letter-spacing:2px;
+
+    transition:.3s;
+
+}
+
+
+.nav a:hover,
+
+.nav .active{
+
+    color:#79b691;
+
+}
+
+
+/*=========================================
+HERO
+=========================================*/
+
+.spotHero{
+
+    width:88%;
+
+    margin:auto;
+
+    padding-top:220px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:90px;
+
+    position:relative;
+
+}
+
+
+.spotHeroText{
+
+    width:45%;
+
+}
+
+
+.heroSub{
+
+    display:block;
+
+    margin-bottom:25px;
+
+    color:#79b691;
+
+    letter-spacing:6px;
+
+}
+
+
+.spotHero h1{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:84px;
+
+    line-height:1.1;
+
+    color:#4d6670;
+
+    margin-bottom:40px;
+
+}
+
+
+.spotHero p{
+
+    line-height:2.2;
+
+    color:#777;
+
+}
+
+
+.spotHeroImage{
+
+    width:50%;
+
+}
+
+
+.spotHeroImage img{
+
+    width:100%;
+
+    height:650px;
+
+    object-fit:cover;
+
+    border-radius:50px;
+
+    box-shadow:0 30px 70px rgba(0,0,0,.12);
+
+}
+
+
+/*=========================================
+BREADCRUMB
+=========================================*/
+
+.breadcrumb{
+
+    width:88%;
+
+    margin:120px auto 0;
+
+    display:flex;
+
+    gap:15px;
+
+    font-size:14px;
+
+    color:#999;
+
+}
+
+.breadcrumb a{
+
+    color:#79b691;
+
+}
+
+
+/*=========================================
+SPOT
+=========================================*/
+
+.spot{
+
+    width:88%;
+
+    margin:220px auto;
+
+    position:relative;
+
+}
+
+
+.number{
+
+    position:absolute;
+
+    top:-70px;
+
+    left:0;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:130px;
+
+    color:#eaf6ec;
+
+    z-index:-1;
+
+}
+
+
+.spotContent{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:100px;
+
+}
+
+
+.spotImages{
+
+    width:50%;
+
+    position:relative;
+
+}
+
+
+.mainPhoto{
+
+    width:85%;
+
+    height:600px;
+
+    object-fit:cover;
+
+    border-radius:40px;
+
+}
+
+
+.subPhoto{
+
+    position:absolute;
+
+    right:0;
+
+    bottom:-60px;
+
+    width:230px;
+
+    height:230px;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+}
+
+
+.spotText{
+
+    width:50%;
+
+}
+
+/*=========================================
+SPOT TEXT
+=========================================*/
+
+.english{
+
+    display:block;
+
+    font-size:14px;
+
+    letter-spacing:5px;
+
+    color:#79b691;
+
+    margin-bottom:25px;
+
+}
+
+
+.spotText h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:60px;
+
+    font-weight:500;
+
+    color:#4d6670;
+
+    margin-bottom:35px;
+
+}
+
+
+.spotText > p{
+
+    line-height:2.2;
+
+    color:#777;
+
+    font-size:15px;
+
+    margin-bottom:45px;
+
+}
+
+
+
+/*=========================================
+INFO CARD
+=========================================*/
+
+.info{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+
+.info div{
+
+    background:rgba(255,255,255,.75);
+
+    padding:22px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+}
+
+
+.info h4{
+
+    color:#79b691;
+
+    font-size:12px;
+
+    letter-spacing:2px;
+
+    margin-bottom:10px;
+
+}
+
+
+.info p{
+
+    color:#666;
+
+    font-size:14px;
+
+}
+
+
+
+/*=========================================
+REVERSE
+=========================================*/
+
+.spot.reverse .spotContent{
+
+    flex-direction:row-reverse;
+
+}
+
+
+.spot.reverse .number{
+
+    right:0;
+
+    left:auto;
+
+}
+
+
+
+/*=========================================
+IMAGE HOVER
+=========================================*/
+
+.mainPhoto,
+.subPhoto{
+
+    transition:.6s;
+
+}
+
+.spotImages:hover .mainPhoto{
+
+    transform:scale(1.03);
+
+}
+
+.spotImages:hover .subPhoto{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+/*=========================================
+NEXT SECTION
+=========================================*/
+
+.nextSection{
+
+    margin-top:240px;
+
+    padding:160px 0;
+
+    background:#f6fbf7;
+
+    text-align:center;
+
+    position:relative;
+
+}
+
+
+.nextInner{
+
+    width:80%;
+
+    margin:auto;
+
+}
+
+
+.nextSub{
+
+    font-size:14px;
+
+    letter-spacing:6px;
+
+    color:#79b691;
+
+    margin-bottom:25px;
+
+}
+
+
+.nextInner h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:60px;
+
+    line-height:1.5;
+
+    color:#4d6670;
+
+    margin-bottom:50px;
+
+}
+
+
+.sectionMore{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    color:#79b691;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    transition:.35s;
+
+}
+
+
+.sectionMore span{
+
+    transition:.35s;
+
+}
+
+
+.sectionMore:hover span{
+
+    transform:translateX(10px);
+
+}
+
+
+
+/*=========================================
+FOOTER
+=========================================*/
+
+.footer{
+
+    padding:100px 0;
+
+    text-align:center;
+
+    background:#fff;
+
+}
+
+
+.footerLogo{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:60px;
+
+    letter-spacing:10px;
+
+    color:#79b691;
+
+    margin-bottom:40px;
+
+}
+
+
+.footer ul{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:45px;
+
+    margin-bottom:40px;
+
+}
+
+
+.footer a{
+
+    color:#666;
+
+    letter-spacing:2px;
+
+    transition:.3s;
+
+}
+
+
+.footer a:hover{
+
+    color:#79b691;
+
+}
+
+
+.footer p{
+
+    color:#999;
+
+    font-size:12px;
+
+    letter-spacing:3px;
+
+}
+
+/*=========================================
+FADE ANIMATION
+=========================================*/
+
+.fade{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:
+    opacity 1s ease,
+    transform 1s ease;
+
+}
+
+.fade.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/*=========================================
+WATERCOLOR DECORATION
+=========================================*/
+
+.spotHero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:280px;
+
+    height:280px;
+
+    top:120px;
+
+    right:-120px;
+
+    border-radius:50%;
+
+    background:#e8f6eb;
+
+    filter:blur(70px);
+
+    z-index:-1;
+
+}
+
+.spotHero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    left:-140px;
+
+    bottom:-120px;
+
+    border-radius:50%;
+
+    background:#fff1dd;
+
+    filter:blur(80px);
+
+    z-index:-1;
+
+}
+
+
+/*=========================================
+SPOT DECORATION
+=========================================*/
+
+.spot:nth-of-type(even)::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:200px;
+
+    height:200px;
+
+    background:#eef8ef;
+
+    border-radius:50%;
+
+    filter:blur(60px);
+
+    right:-80px;
+
+    top:100px;
+
+    z-index:-1;
+
+}
+
+.spot:nth-of-type(odd)::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    background:#fff4e6;
+
+    border-radius:50%;
+
+    filter:blur(55px);
+
+    left:-80px;
+
+    bottom:80px;
+
+    z-index:-1;
+
+}
+
+
+/*=========================================
+SCROLL LINE
+=========================================*/
+
+.spotHeroText::after{
+
+    content:"";
+
+    display:block;
+
+    width:1px;
+
+    height:90px;
+
+    background:#79b691;
+
+    margin-top:70px;
+
+    opacity:.45;
+
+}
+
+
+/*=========================================
+TABLET
+=========================================*/
+
+@media(max-width:1100px){
+
+    .spotHero{
+
+        flex-direction:column;
+
+        gap:60px;
+
+        padding-top:170px;
+
+    }
+
+    .spotHeroText{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+    .spotHeroImage{
+
+        width:90%;
+
+    }
+
+    .spotContent{
+
+        flex-direction:column;
+
+        gap:70px;
+
+    }
+
+    .spot.reverse .spotContent{
+
+        flex-direction:column;
+
+    }
+
+    .spotImages,
+    .spotText{
+
+        width:100%;
+
+    }
+
+    .mainPhoto{
+
+        width:90%;
+
+    }
+
+    .subPhoto{
+
+        width:200px;
+
+        height:200px;
+
+    }
+
+}
+
+
+/*=========================================
+SMART PHONE
+=========================================*/
+
+@media(max-width:768px){
+
+    .header{
+
+        height:80px;
+
+        padding:0 5%;
+
+    }
+
+    .logo{
+
+        font-size:34px;
+
+    }
+
+    .nav ul{
+
+        gap:15px;
+
+    }
+
+    .nav a{
+
+        font-size:11px;
+
+    }
+
+    .spotHero h1{
+
+        font-size:50px;
+
+    }
+
+    .spotHero p{
+
+        font-size:14px;
+
+    }
+
+    .spotHeroImage img{
+
+        height:420px;
+
+        border-radius:30px;
+
+    }
+
+    .breadcrumb{
+
+        margin-top:80px;
+
+    }
+
+    .spot{
+
+        margin:140px auto;
+
+    }
+
+    .number{
+
+        font-size:90px;
+
+        top:-50px;
+
+    }
+
+    .mainPhoto{
+
+        width:100%;
+
+        height:420px;
+
+        border-radius:30px;
+
+    }
+
+    .subPhoto{
+
+        width:140px;
+
+        height:140px;
+
+        bottom:-30px;
+
+    }
+
+    .spotText h2{
+
+        font-size:44px;
+
+    }
+
+    .spotText>p{
+
+        line-height:2;
+
+    }
+
+    .info{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .nextInner h2{
+
+        font-size:40px;
+
+    }
+
+    .footer ul{
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+}
+
+
+/*=========================================
+SMALL PHONE
+=========================================*/
+
+@media(max-width:480px){
+
+    .nav{
+
+        display:none;
+
+    }
+
+    .spotHero h1{
+
+        font-size:38px;
+
+    }
+
+    .heroSub{
+
+        font-size:14px;
+
+    }
+
+    .nextSection{
+
+        padding:100px 0;
+
+    }
+
+}
+
+/*=========================================
+DESIGN UPGRADE
+参考サイト風装飾
+=========================================*/
+
+/*-------------------------
+セクション共通
+-------------------------*/
+
+section{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/*-------------------------
+水彩背景①
+-------------------------*/
+
+section::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:260px;
+
+    height:260px;
+
+    left:-120px;
+
+    top:80px;
+
+    border-radius:50%;
+
+    background:#dff5f8;
+
+    filter:blur(70px);
+
+    opacity:.7;
+
+    z-index:-1;
+
+}
+
+/*-------------------------
+水彩背景②
+-------------------------*/
+
+section::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+
+    height:220px;
+
+    right:-100px;
+
+    bottom:60px;
+
+    border-radius:50%;
+
+    background:#fff3e7;
+
+    filter:blur(60px);
+
+    opacity:.65;
+
+    z-index:-1;
+
+}
+
+/*-------------------------
+偶数セクションだけ色変更
+-------------------------*/
+
+section:nth-of-type(even)::before{
+
+    background:#e9f8ef;
+
+}
+
+section:nth-of-type(even)::after{
+
+    background:#fff7df;
+
+}
+
+/*-------------------------
+3つおきに色変更
+-------------------------*/
+
+section:nth-of-type(3n)::before{
+
+    background:#f5ecff;
+
+}
+
+section:nth-of-type(3n)::after{
+
+    background:#e8f7ff;
+
+}
+
+/*-------------------------
+余白を増やす
+-------------------------*/
+
+section{
+
+    padding-top:120px;
+
+    padding-bottom:120px;
+
+}
+
+/* Heroはそのまま */
+
+.hero,
+.seaHero,
+.spotHero{
+
+    padding-top:220px;
+
+}
+
+/*-------------------------
+写真を少し浮かせる
+-------------------------*/
+
+.mainPhoto,
+.subPhoto{
+
+    transition:.45s ease;
+
+}
+
+.mainPhoto:hover{
+
+    transform:
+    translateY(-10px)
+    rotate(-1deg);
+
+}
+
+.subPhoto:hover{
+
+    transform:
+    translateY(-10px)
+    rotate(2deg);
+
+}
+
+/*-------------------------
+カードをガラス風に
+-------------------------*/
+
+.info div{
+
+    border:1px solid rgba(255,255,255,.8);
+
+    backdrop-filter:blur(12px);
+
+}
+
+/*-------------------------
+ほんのり手描き風ライン
+-------------------------*/
+
+.hero,
+.seaHero,
+.spotHero{
+
+    background-image:
+
+    repeating-linear-gradient(
+
+        -10deg,
+
+        transparent 0,
+
+        transparent 26px,
+
+        rgba(120,191,208,.04) 27px,
+
+        transparent 28px
+
+    );
+
+}
+
+/*-------------------------
+画像をさらに立体的に
+-------------------------*/
+
+.mainPhoto{
+
+    box-shadow:
+
+    0 30px 70px rgba(0,0,0,.12);
+
+}
+
+.subPhoto{
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.18);
+
+}
+
+/*-------------------------
+セクションをふわっと切り替え
+-------------------------*/
+
+.beach,
+.spot{
+
+    border-radius:50px;
+
+}

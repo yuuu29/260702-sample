@@ -1,0 +1,1026 @@
+/*=========================================
+STAY PAGE
+=========================================*/
+
+body{
+
+    font-family:"Noto Sans JP",sans-serif;
+
+    color:#555;
+
+    background:#fffdf9;
+
+    overflow-x:hidden;
+
+}
+
+
+/*=========================================
+BACKGROUND GRID
+=========================================*/
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background-image:
+
+    linear-gradient(rgba(195,210,225,.08) 1px,transparent 1px),
+
+    linear-gradient(90deg,rgba(195,210,225,.08) 1px,transparent 1px);
+
+    background-size:80px 80px;
+
+    z-index:-3;
+
+}
+
+
+body::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:650px;
+
+    height:650px;
+
+    right:-180px;
+
+    top:220px;
+
+    border-radius:50%;
+
+    background:#eef5fb;
+
+    filter:blur(110px);
+
+    z-index:-2;
+
+}
+
+
+/*=========================================
+HEADER
+=========================================*/
+
+.header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 6%;
+
+    background:rgba(255,255,255,.45);
+
+    backdrop-filter:blur(15px);
+
+    z-index:999;
+
+}
+
+
+.logo{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:45px;
+
+    letter-spacing:8px;
+
+    color:#6e9ec5;
+
+}
+
+
+.nav ul{
+
+    display:flex;
+
+    gap:45px;
+
+}
+
+
+.nav a{
+
+    color:#555;
+
+    letter-spacing:2px;
+
+    transition:.3s;
+
+}
+
+
+.nav a:hover,
+.nav .active{
+
+    color:#6e9ec5;
+
+}
+
+
+/*=========================================
+HERO
+=========================================*/
+
+.stayHero{
+
+    width:88%;
+
+    margin:auto;
+
+    padding-top:220px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:90px;
+
+    position:relative;
+
+}
+
+
+.stayHeroText{
+
+    width:45%;
+
+}
+
+
+.heroSub{
+
+    display:block;
+
+    margin-bottom:25px;
+
+    color:#6e9ec5;
+
+    letter-spacing:6px;
+
+}
+
+
+.stayHero h1{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:84px;
+
+    line-height:1.1;
+
+    color:#495f73;
+
+    margin-bottom:40px;
+
+}
+
+
+.stayHero p{
+
+    line-height:2.2;
+
+    color:#777;
+
+}
+
+
+.stayHeroImage{
+
+    width:50%;
+
+}
+
+
+.stayHeroImage img{
+
+    width:100%;
+
+    height:650px;
+
+    object-fit:cover;
+
+    border-radius:50px;
+
+    box-shadow:0 30px 70px rgba(0,0,0,.12);
+
+}
+
+
+/*=========================================
+BREADCRUMB
+=========================================*/
+
+.breadcrumb{
+
+    width:88%;
+
+    margin:120px auto 0;
+
+    display:flex;
+
+    gap:15px;
+
+    font-size:14px;
+
+    color:#999;
+
+}
+
+
+.breadcrumb a{
+
+    color:#6e9ec5;
+
+}
+
+
+/*=========================================
+STAY
+=========================================*/
+
+.stay{
+
+    width:88%;
+
+    margin:220px auto;
+
+    position:relative;
+
+}
+
+
+.number{
+
+    position:absolute;
+
+    top:-70px;
+
+    left:0;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:130px;
+
+    color:#edf5fb;
+
+    z-index:-1;
+
+}
+
+
+.stayContent{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:100px;
+
+}
+
+
+.stayImages{
+
+    width:50%;
+
+    position:relative;
+
+}
+
+
+.mainPhoto{
+
+    width:85%;
+
+    height:600px;
+
+    object-fit:cover;
+
+    border-radius:40px;
+
+}
+
+
+.subPhoto{
+
+    position:absolute;
+
+    right:0;
+
+    bottom:-60px;
+
+    width:230px;
+
+    height:230px;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+}
+
+
+.stayText{
+
+    width:50%;
+
+}
+
+/*=========================================
+STAY TEXT
+=========================================*/
+
+.english{
+
+    display:block;
+
+    font-size:14px;
+
+    letter-spacing:5px;
+
+    color:#6e9ec5;
+
+    margin-bottom:25px;
+
+}
+
+
+.stayText h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:60px;
+
+    font-weight:500;
+
+    color:#495f73;
+
+    margin-bottom:35px;
+
+}
+
+
+.stayText > p{
+
+    line-height:2.2;
+
+    color:#777;
+
+    font-size:15px;
+
+    margin-bottom:45px;
+
+}
+
+
+
+/*=========================================
+INFO CARD
+=========================================*/
+
+.info{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+
+.info div{
+
+    background:rgba(255,255,255,.75);
+
+    padding:22px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+    border:1px solid rgba(255,255,255,.8);
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+.info h4{
+
+    color:#6e9ec5;
+
+    font-size:12px;
+
+    letter-spacing:2px;
+
+    margin-bottom:10px;
+
+}
+
+
+.info p{
+
+    color:#666;
+
+    font-size:14px;
+
+}
+
+
+
+/*=========================================
+REVERSE
+=========================================*/
+
+.stay.reverse .stayContent{
+
+    flex-direction:row-reverse;
+
+}
+
+
+.stay.reverse .number{
+
+    right:0;
+
+    left:auto;
+
+}
+
+
+
+/*=========================================
+IMAGE HOVER
+=========================================*/
+
+.mainPhoto,
+.subPhoto{
+
+    transition:.6s;
+
+}
+
+.stayImages:hover .mainPhoto{
+
+    transform:scale(1.03);
+
+}
+
+.stayImages:hover .subPhoto{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+/*=========================================
+NEXT SECTION
+=========================================*/
+
+.nextSection{
+
+    margin-top:240px;
+
+    padding:160px 0;
+
+    background:#f6f9fc;
+
+    text-align:center;
+
+    position:relative;
+
+}
+
+
+.nextInner{
+
+    width:80%;
+
+    margin:auto;
+
+}
+
+
+.nextSub{
+
+    font-size:14px;
+
+    letter-spacing:6px;
+
+    color:#6e9ec5;
+
+    margin-bottom:25px;
+
+}
+
+
+.nextInner h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:60px;
+
+    line-height:1.5;
+
+    color:#495f73;
+
+    margin-bottom:50px;
+
+}
+
+
+.sectionMore{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    color:#6e9ec5;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    transition:.35s;
+
+}
+
+
+.sectionMore span{
+
+    transition:.35s;
+
+}
+
+
+.sectionMore:hover span{
+
+    transform:translateX(10px);
+
+}
+
+
+
+/*=========================================
+FOOTER
+=========================================*/
+
+.footer{
+
+    padding:100px 0;
+
+    text-align:center;
+
+    background:#fff;
+
+}
+
+
+.footerLogo{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:60px;
+
+    letter-spacing:10px;
+
+    color:#6e9ec5;
+
+    margin-bottom:40px;
+
+}
+
+
+.footer ul{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:45px;
+
+    margin-bottom:40px;
+
+}
+
+
+.footer a{
+
+    color:#666;
+
+    letter-spacing:2px;
+
+    transition:.3s;
+
+}
+
+
+.footer a:hover{
+
+    color:#6e9ec5;
+
+}
+
+
+.footer p{
+
+    color:#999;
+
+    font-size:12px;
+
+    letter-spacing:3px;
+
+}
+
+/*=========================================
+FADE ANIMATION
+=========================================*/
+
+.fade{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:
+        opacity 1s ease,
+        transform 1s ease;
+
+}
+
+.fade.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/*=========================================
+WATERCOLOR DECORATION
+=========================================*/
+
+.stayHero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+
+    height:300px;
+
+    right:-120px;
+
+    top:100px;
+
+    border-radius:50%;
+
+    background:#eef6ff;
+
+    filter:blur(70px);
+
+    z-index:-1;
+
+}
+
+.stayHero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    left:-150px;
+
+    bottom:-100px;
+
+    border-radius:50%;
+
+    background:#fff3e5;
+
+    filter:blur(80px);
+
+    z-index:-1;
+
+}
+
+
+/*=========================================
+SECTION DECORATION
+=========================================*/
+
+.stay:nth-of-type(even)::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+
+    height:220px;
+
+    right:-80px;
+
+    top:120px;
+
+    background:#eef6ff;
+
+    border-radius:50%;
+
+    filter:blur(60px);
+
+    z-index:-1;
+
+}
+
+.stay:nth-of-type(odd)::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    left:-70px;
+
+    bottom:60px;
+
+    background:#fff3e5;
+
+    border-radius:50%;
+
+    filter:blur(55px);
+
+    z-index:-1;
+
+}
+
+
+/*=========================================
+SCROLL LINE
+=========================================*/
+
+.stayHeroText::after{
+
+    content:"";
+
+    display:block;
+
+    width:1px;
+
+    height:90px;
+
+    margin-top:70px;
+
+    background:#6e9ec5;
+
+    opacity:.45;
+
+}
+
+
+/*=========================================
+TABLET
+=========================================*/
+
+@media(max-width:1100px){
+
+    .stayHero{
+
+        flex-direction:column;
+
+        gap:60px;
+
+        padding-top:170px;
+
+    }
+
+    .stayHeroText{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+    .stayHeroImage{
+
+        width:90%;
+
+    }
+
+    .stayContent{
+
+        flex-direction:column;
+
+        gap:70px;
+
+    }
+
+    .stay.reverse .stayContent{
+
+        flex-direction:column;
+
+    }
+
+    .stayImages,
+    .stayText{
+
+        width:100%;
+
+    }
+
+    .mainPhoto{
+
+        width:90%;
+
+    }
+
+    .subPhoto{
+
+        width:200px;
+
+        height:200px;
+
+    }
+
+}
+
+
+/*=========================================
+SMART PHONE
+=========================================*/
+
+@media(max-width:768px){
+
+    .header{
+
+        height:80px;
+
+        padding:0 5%;
+
+    }
+
+    .logo{
+
+        font-size:34px;
+
+    }
+
+    .nav ul{
+
+        gap:15px;
+
+    }
+
+    .nav a{
+
+        font-size:11px;
+
+    }
+
+    .stayHero h1{
+
+        font-size:52px;
+
+    }
+
+    .stayHeroImage img{
+
+        height:420px;
+
+        border-radius:30px;
+
+    }
+
+    .breadcrumb{
+
+        margin-top:80px;
+
+    }
+
+    .stay{
+
+        margin:140px auto;
+
+    }
+
+    .number{
+
+        font-size:90px;
+
+        top:-50px;
+
+    }
+
+    .mainPhoto{
+
+        width:100%;
+
+        height:420px;
+
+        border-radius:30px;
+
+    }
+
+    .subPhoto{
+
+        width:140px;
+
+        height:140px;
+
+        bottom:-30px;
+
+    }
+
+    .stayText h2{
+
+        font-size:42px;
+
+    }
+
+    .info{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .nextInner h2{
+
+        font-size:40px;
+
+    }
+
+    .footer ul{
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+}
+
+
+/*=========================================
+SMALL PHONE
+=========================================*/
+
+@media(max-width:480px){
+
+    .nav{
+
+        display:none;
+
+    }
+
+    .stayHero h1{
+
+        font-size:38px;
+
+    }
+
+    .nextSection{
+
+        padding:100px 0;
+
+    }
+
+}

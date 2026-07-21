@@ -1,0 +1,1063 @@
+/*=========================================
+THINGS TO DO PAGE
+=========================================*/
+
+body{
+
+    font-family:"Noto Sans JP",sans-serif;
+
+    color:#555;
+
+    background:#fffdf9;
+
+    overflow-x:hidden;
+
+}
+
+
+/*=========================================
+BACKGROUND
+=========================================*/
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background-image:
+
+    linear-gradient(rgba(190,210,225,.08) 1px,transparent 1px),
+
+    linear-gradient(90deg,rgba(190,210,225,.08) 1px,transparent 1px);
+
+    background-size:80px 80px;
+
+    z-index:-3;
+
+}
+
+
+body::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+
+    height:700px;
+
+    right:-220px;
+
+    top:250px;
+
+    border-radius:50%;
+
+    background:#eef8ff;
+
+    filter:blur(120px);
+
+    z-index:-2;
+
+}
+
+
+/*=========================================
+HEADER
+=========================================*/
+
+.header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 6%;
+
+    background:rgba(255,255,255,.45);
+
+    backdrop-filter:blur(14px);
+
+    z-index:999;
+
+}
+
+
+.logo{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:44px;
+
+    letter-spacing:8px;
+
+    color:#6e9ec5;
+
+}
+
+
+.nav ul{
+
+    display:flex;
+
+    gap:45px;
+
+}
+
+
+.nav a{
+
+    color:#555;
+
+    letter-spacing:2px;
+
+    transition:.3s;
+
+}
+
+
+.nav a:hover,
+.nav .active{
+
+    color:#6e9ec5;
+
+}
+
+
+/*=========================================
+HERO
+=========================================*/
+
+.thingsHero{
+
+    width:88%;
+
+    margin:auto;
+
+    padding-top:220px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:90px;
+
+    position:relative;
+
+}
+
+
+.thingsHeroText{
+
+    width:45%;
+
+}
+
+
+.heroSub{
+
+    display:block;
+
+    margin-bottom:25px;
+
+    color:#6e9ec5;
+
+    letter-spacing:6px;
+
+}
+
+
+.thingsHero h1{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:82px;
+
+    line-height:1.1;
+
+    color:#495f73;
+
+    margin-bottom:35px;
+
+}
+
+
+.thingsHero p{
+
+    line-height:2.2;
+
+    color:#777;
+
+}
+
+
+.thingsHeroImage{
+
+    width:50%;
+
+}
+
+
+.thingsHeroImage img{
+
+    width:100%;
+
+    height:650px;
+
+    object-fit:cover;
+
+    border-radius:50px;
+
+    box-shadow:0 30px 70px rgba(0,0,0,.12);
+
+}
+
+
+/*=========================================
+BREADCRUMB
+=========================================*/
+
+.breadcrumb{
+
+    width:88%;
+
+    margin:120px auto 0;
+
+    display:flex;
+
+    gap:15px;
+
+    color:#999;
+
+    font-size:14px;
+
+}
+
+
+.breadcrumb a{
+
+    color:#6e9ec5;
+
+}
+
+
+/*=========================================
+THINGS
+=========================================*/
+
+.things{
+
+    width:88%;
+
+    margin:220px auto;
+
+    position:relative;
+
+}
+
+
+.number{
+
+    position:absolute;
+
+    top:-70px;
+
+    left:0;
+
+    font-size:130px;
+
+    font-family:"Cormorant Garamond",serif;
+
+    color:#edf5fb;
+
+    z-index:-1;
+
+}
+
+
+.thingsContent{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:100px;
+
+}
+
+
+.thingsImages{
+
+    width:50%;
+
+    position:relative;
+
+}
+
+
+.mainPhoto{
+
+    width:85%;
+
+    height:600px;
+
+    object-fit:cover;
+
+    border-radius:40px;
+
+}
+
+
+.subPhoto{
+
+    position:absolute;
+
+    right:0;
+
+    bottom:-60px;
+
+    width:230px;
+
+    height:230px;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+}
+
+
+.thingsText{
+
+    width:50%;
+
+}
+
+/*=========================================
+THINGS TEXT
+=========================================*/
+
+.english{
+
+    display:block;
+
+    font-size:14px;
+
+    letter-spacing:5px;
+
+    color:#6e9ec5;
+
+    margin-bottom:25px;
+
+}
+
+
+.thingsText h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:60px;
+
+    font-weight:500;
+
+    color:#495f73;
+
+    margin-bottom:35px;
+
+}
+
+
+.thingsText > p{
+
+    line-height:2.2;
+
+    color:#777;
+
+    font-size:15px;
+
+    margin-bottom:45px;
+
+}
+
+
+
+/*=========================================
+INFO CARD
+=========================================*/
+
+.info{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+
+.info div{
+
+    background:rgba(255,255,255,.75);
+
+    padding:22px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.8);
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+}
+
+
+.info h4{
+
+    color:#6e9ec5;
+
+    font-size:12px;
+
+    letter-spacing:2px;
+
+    margin-bottom:10px;
+
+}
+
+
+.info p{
+
+    color:#666;
+
+    font-size:14px;
+
+}
+
+
+
+/*=========================================
+REVERSE
+=========================================*/
+
+.things.reverse .thingsContent{
+
+    flex-direction:row-reverse;
+
+}
+
+
+.things.reverse .number{
+
+    right:0;
+
+    left:auto;
+
+}
+
+
+
+/*=========================================
+IMAGE HOVER
+=========================================*/
+
+.mainPhoto,
+.subPhoto{
+
+    transition:.6s;
+
+}
+
+
+.thingsImages:hover .mainPhoto{
+
+    transform:scale(1.03);
+
+}
+
+
+.thingsImages:hover .subPhoto{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+/*=========================================
+THANK YOU
+=========================================*/
+
+.thanksSection{
+
+    margin-top:240px;
+
+    padding:180px 0;
+
+    background:#f6f9fc;
+
+    text-align:center;
+
+    position:relative;
+
+}
+
+
+.thanksInner{
+
+    width:75%;
+
+    margin:auto;
+
+}
+
+
+.thanksInner h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:72px;
+
+    color:#495f73;
+
+    margin:25px 0 40px;
+
+}
+
+
+.thanksInner p{
+
+    line-height:2.3;
+
+    color:#777;
+
+    max-width:760px;
+
+    margin:0 auto 60px;
+
+}
+
+
+.sectionMore{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    color:#6e9ec5;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    transition:.35s;
+
+}
+
+
+.sectionMore span{
+
+    transition:.35s;
+
+}
+
+
+.sectionMore:hover span{
+
+    transform:translateX(10px);
+
+}
+
+
+
+/*=========================================
+FOOTER
+=========================================*/
+
+.footer{
+
+    padding:100px 0;
+
+    background:#fff;
+
+    text-align:center;
+
+}
+
+
+.footerLogo{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:60px;
+
+    letter-spacing:10px;
+
+    color:#6e9ec5;
+
+    margin-bottom:40px;
+
+}
+
+
+.footer ul{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:45px;
+
+    margin-bottom:40px;
+
+}
+
+
+.footer a{
+
+    color:#666;
+
+    letter-spacing:2px;
+
+    transition:.3s;
+
+}
+
+
+.footer a:hover{
+
+    color:#6e9ec5;
+
+}
+
+
+.footer p{
+
+    color:#999;
+
+    font-size:12px;
+
+    letter-spacing:3px;
+
+}
+
+/*=========================================
+FADE ANIMATION
+=========================================*/
+
+.fade{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:
+        opacity 1s ease,
+        transform 1s ease;
+
+}
+
+.fade.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/*=========================================
+WATERCOLOR DECORATION
+=========================================*/
+
+.thingsHero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    right:-130px;
+
+    top:80px;
+
+    border-radius:50%;
+
+    background:#e8f6ff;
+
+    filter:blur(75px);
+
+    z-index:-1;
+
+}
+
+.thingsHero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+
+    height:300px;
+
+    left:-140px;
+
+    bottom:-90px;
+
+    border-radius:50%;
+
+    background:#fff4e8;
+
+    filter:blur(75px);
+
+    z-index:-1;
+
+}
+
+
+/*=========================================
+SECTION WATERCOLOR
+=========================================*/
+
+.things:nth-of-type(odd)::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:210px;
+
+    height:210px;
+
+    left:-70px;
+
+    bottom:40px;
+
+    border-radius:50%;
+
+    background:#eef7ff;
+
+    filter:blur(60px);
+
+    z-index:-1;
+
+}
+
+.things:nth-of-type(even)::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:230px;
+
+    height:230px;
+
+    right:-80px;
+
+    top:90px;
+
+    border-radius:50%;
+
+    background:#fff3e5;
+
+    filter:blur(65px);
+
+    z-index:-1;
+
+}
+
+
+/*=========================================
+HAND DRAWN LINE
+=========================================*/
+
+.things::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-80px;
+
+    width:140px;
+
+    height:18px;
+
+    transform:translateX(-50%);
+
+    background:
+
+    repeating-linear-gradient(
+
+        90deg,
+
+        transparent 0,
+
+        transparent 10px,
+
+        rgba(110,158,197,.18) 11px,
+
+        rgba(110,158,197,.18) 13px
+
+    );
+
+    border-radius:20px;
+
+    opacity:.8;
+
+}
+
+
+/*=========================================
+THANK YOU BACKGROUND
+=========================================*/
+
+.thanksSection::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    border-radius:50%;
+
+    background:#edf8ff;
+
+    filter:blur(110px);
+
+    z-index:-1;
+
+}
+
+
+/*=========================================
+TABLET
+=========================================*/
+
+@media(max-width:1100px){
+
+    .thingsHero{
+
+        flex-direction:column;
+
+        gap:60px;
+
+        padding-top:170px;
+
+    }
+
+    .thingsHeroText{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+    .thingsHeroImage{
+
+        width:90%;
+
+    }
+
+    .thingsContent{
+
+        flex-direction:column;
+
+        gap:70px;
+
+    }
+
+    .things.reverse .thingsContent{
+
+        flex-direction:column;
+
+    }
+
+    .thingsImages,
+    .thingsText{
+
+        width:100%;
+
+    }
+
+    .mainPhoto{
+
+        width:90%;
+
+    }
+
+}
+
+
+/*=========================================
+SMART PHONE
+=========================================*/
+
+@media(max-width:768px){
+
+    .header{
+
+        height:80px;
+
+        padding:0 5%;
+
+    }
+
+    .logo{
+
+        font-size:34px;
+
+    }
+
+    .nav ul{
+
+        gap:15px;
+
+    }
+
+    .nav a{
+
+        font-size:11px;
+
+    }
+
+    .thingsHero h1{
+
+        font-size:52px;
+
+    }
+
+    .thingsHeroImage img{
+
+        height:420px;
+
+        border-radius:30px;
+
+    }
+
+    .things{
+
+        margin:140px auto;
+
+    }
+
+    .number{
+
+        font-size:90px;
+
+        top:-45px;
+
+    }
+
+    .mainPhoto{
+
+        width:100%;
+
+        height:420px;
+
+        border-radius:30px;
+
+    }
+
+    .subPhoto{
+
+        width:150px;
+
+        height:150px;
+
+        bottom:-30px;
+
+    }
+
+    .thingsText h2{
+
+        font-size:42px;
+
+    }
+
+    .info{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .thanksInner h2{
+
+        font-size:48px;
+
+    }
+
+    .footer ul{
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+}
+
+
+/*=========================================
+SMALL PHONE
+=========================================*/
+
+@media(max-width:480px){
+
+    .nav{
+
+        display:none;
+
+    }
+
+    .thingsHero h1{
+
+        font-size:38px;
+
+    }
+
+    .thanksSection{
+
+        padding:110px 0;
+
+    }
+
+}

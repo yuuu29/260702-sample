@@ -1,0 +1,1764 @@
+/*=========================================
+SEA PAGE COMMON
+=========================================*/
+
+body{
+
+    font-family:
+    "Noto Sans JP",
+    sans-serif;
+
+    color:#555;
+
+    background:
+    linear-gradient(
+    rgba(255,255,255,.9),
+    rgba(255,255,255,.9)
+    );
+
+    overflow-x:hidden;
+
+}
+
+
+
+/*=========================================
+BACKGROUND GRID
+=========================================*/
+
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background-image:
+
+    linear-gradient(
+    rgba(120,191,208,.08) 1px,
+    transparent 1px
+    ),
+
+    linear-gradient(
+    90deg,
+    rgba(120,191,208,.08) 1px,
+    transparent 1px
+    );
+
+
+    background-size:
+    80px 80px;
+
+
+    z-index:-2;
+
+}
+
+
+
+/* watercolor circle */
+
+body::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:600px;
+
+    height:600px;
+
+    right:-200px;
+
+    top:300px;
+
+
+    background:#dff4f7;
+
+    border-radius:50%;
+
+
+    filter:blur(100px);
+
+
+    z-index:-1;
+
+}
+
+
+
+/*=========================================
+HEADER
+=========================================*/
+
+
+.header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100px;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+
+    padding:0 6%;
+
+
+    background:
+    rgba(255,255,255,.45);
+
+
+    backdrop-filter:blur(15px);
+
+
+    z-index:100;
+
+}
+
+
+
+
+.logo{
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+
+    font-size:45px;
+
+
+    letter-spacing:8px;
+
+
+    color:#6eb9ca;
+
+}
+
+
+
+
+.nav ul{
+
+    display:flex;
+
+    gap:45px;
+
+}
+
+
+
+.nav a{
+
+    color:#555;
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+
+    transition:.3s;
+
+}
+
+
+.nav a:hover,
+.nav .active{
+
+    color:#6eb9ca;
+
+}
+
+
+
+/*=========================================
+SEA HERO
+=========================================*/
+
+
+.seaHero{
+
+    width:88%;
+
+    margin:0 auto;
+
+
+    padding-top:220px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:space-between;
+
+
+    gap:80px;
+
+}
+
+
+
+
+.seaHeroText{
+
+    width:45%;
+
+}
+
+
+
+.heroSub{
+
+    display:block;
+
+
+    font-size:18px;
+
+
+    letter-spacing:6px;
+
+
+    color:#6eb9ca;
+
+
+    margin-bottom:30px;
+
+}
+
+
+
+.seaHero h1{
+
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+
+    font-size:85px;
+
+
+    line-height:1.1;
+
+
+    font-weight:500;
+
+
+    color:#4d6670;
+
+
+    margin-bottom:40px;
+
+}
+
+
+
+.seaHero p{
+
+    line-height:2;
+
+
+    color:#777;
+
+}
+
+
+
+/* Hero image */
+
+
+.seaHeroImage{
+
+    width:50%;
+
+}
+
+
+.seaHeroImage img{
+
+    width:100%;
+
+
+    height:650px;
+
+
+    object-fit:cover;
+
+
+    border-radius:50px;
+
+
+    box-shadow:
+    0 30px 70px rgba(0,0,0,.12);
+
+}
+
+
+
+/*=========================================
+BREADCRUMB
+=========================================*/
+
+
+.breadcrumb{
+
+
+    width:88%;
+
+
+    margin:120px auto 0;
+
+
+    display:flex;
+
+
+    gap:15px;
+
+
+    color:#999;
+
+
+    font-size:14px;
+
+}
+
+
+.breadcrumb a{
+
+    color:#6eb9ca;
+
+}
+
+
+
+/*=========================================
+BEACH SECTION
+=========================================*/
+
+
+.beach{
+
+
+    width:88%;
+
+
+    margin:220px auto;
+
+
+    position:relative;
+
+}
+
+
+
+.number{
+
+
+    position:absolute;
+
+
+    top:-70px;
+
+
+    left:0;
+
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+
+    font-size:130px;
+
+
+    color:#dff4f7;
+
+
+    z-index:-1;
+
+}
+
+
+
+.beachContent{
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:100px;
+
+}
+
+
+
+.beachImages{
+
+
+    width:50%;
+
+
+    position:relative;
+
+}
+
+
+
+.mainPhoto{
+
+
+    width:85%;
+
+
+    height:600px;
+
+
+    object-fit:cover;
+
+
+    border-radius:40px;
+
+}
+
+
+
+.subPhoto{
+
+
+    position:absolute;
+
+
+    width:230px;
+
+
+    height:230px;
+
+
+    object-fit:cover;
+
+
+    border-radius:30px;
+
+
+    right:0;
+
+
+    bottom:-60px;
+
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.15);
+
+}
+
+
+
+
+.beachText{
+
+
+    width:50%;
+
+}
+
+/*=========================================
+BEACH TEXT
+=========================================*/
+
+
+.english{
+
+    display:block;
+
+    font-size:14px;
+
+    letter-spacing:5px;
+
+    color:#78bfd0;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.beachText h2{
+
+
+    font-family:
+    "Cormorant Garamond",
+    serif;
+
+
+    font-size:60px;
+
+
+    font-weight:500;
+
+
+    color:#4d6670;
+
+
+    margin-bottom:35px;
+
+
+}
+
+
+
+.beachText>p{
+
+
+    line-height:2.2;
+
+
+    color:#777;
+
+
+    margin-bottom:45px;
+
+
+    font-size:15px;
+
+}
+
+
+
+
+
+/*=========================================
+INFORMATION
+=========================================*/
+
+
+.info{
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+    gap:25px;
+
+
+}
+
+
+
+.info div{
+
+
+    padding:20px;
+
+
+    background:rgba(255,255,255,.7);
+
+
+    border-radius:20px;
+
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.05);
+
+
+}
+
+
+
+.info h4{
+
+
+    font-size:12px;
+
+
+    letter-spacing:2px;
+
+
+    color:#78bfd0;
+
+
+    margin-bottom:10px;
+
+
+}
+
+
+
+.info p{
+
+
+    font-size:14px;
+
+
+    color:#666;
+
+
+}
+
+
+
+
+
+
+/*=========================================
+REVERSE LAYOUT
+=========================================*/
+
+
+.beach.reverse .beachContent{
+
+
+    flex-direction:row-reverse;
+
+
+}
+
+
+
+.beach.reverse .number{
+
+
+    right:0;
+
+
+    left:auto;
+
+
+}
+
+
+
+
+
+
+/*=========================================
+IMAGE HOVER
+=========================================*/
+
+
+.mainPhoto,
+.subPhoto{
+
+
+    transition:.6s;
+
+}
+
+
+
+.beachImages:hover .mainPhoto{
+
+
+    transform:scale(1.03);
+
+
+}
+
+
+
+
+
+/*=========================================
+NEXT SECTION
+=========================================*/
+
+
+.nextSection{
+
+
+    margin-top:250px;
+
+
+    padding:150px 0;
+
+
+    background:#f5fbfc;
+
+
+    text-align:center;
+
+
+    position:relative;
+
+
+}
+
+
+
+.nextInner{
+
+
+    width:80%;
+
+
+    margin:auto;
+
+
+}
+
+
+
+.nextSub{
+
+
+    font-size:14px;
+
+
+    letter-spacing:6px;
+
+
+    color:#78bfd0;
+
+
+    margin-bottom:30px;
+
+
+}
+
+
+
+.nextInner h2{
+
+
+    font-family:
+
+    "Cormorant Garamond",
+    serif;
+
+
+    font-size:60px;
+
+
+    line-height:1.5;
+
+
+    color:#4d6670;
+
+
+    margin-bottom:50px;
+
+
+}
+
+
+
+
+
+
+
+/*=========================================
+VIEW MORE BUTTON
+=========================================*/
+
+
+.sectionMore{
+
+
+    display:inline-flex;
+
+
+    align-items:center;
+
+
+    gap:20px;
+
+
+    color:#78bfd0;
+
+
+    letter-spacing:3px;
+
+
+    font-weight:700;
+
+
+    transition:.35s;
+
+
+}
+
+
+
+.sectionMore span{
+
+
+    transition:.35s;
+
+
+}
+
+
+
+.sectionMore:hover span{
+
+
+    transform:translateX(10px);
+
+
+}
+
+
+
+
+
+
+
+/*=========================================
+FOOTER
+=========================================*/
+
+
+.footer{
+
+
+    padding:100px 0;
+
+
+    text-align:center;
+
+
+    background:white;
+
+
+}
+
+
+
+.footerLogo{
+
+
+    font-family:
+
+    "Cormorant Garamond",
+    serif;
+
+
+    font-size:60px;
+
+
+    letter-spacing:10px;
+
+
+    color:#78bfd0;
+
+
+    margin-bottom:40px;
+
+
+}
+
+
+
+.footer ul{
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:45px;
+
+
+    margin-bottom:40px;
+
+
+}
+
+
+
+.footer a{
+
+
+    color:#666;
+
+
+    letter-spacing:2px;
+
+
+    font-size:14px;
+
+
+}
+
+
+
+.footer a:hover{
+
+
+    color:#78bfd0;
+
+
+}
+
+
+
+.footer p{
+
+
+    font-size:12px;
+
+
+    letter-spacing:3px;
+
+
+    color:#999;
+
+
+}
+
+/*=========================================
+FADE ANIMATION
+=========================================*/
+
+
+.fade{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:
+
+    opacity 1s ease,
+
+    transform 1s ease;
+
+}
+
+
+
+.fade.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+
+
+
+/*=========================================
+DECORATION WAVE
+=========================================*/
+
+
+.seaHero::before{
+
+    content:"";
+
+    position:absolute;
+
+
+    width:250px;
+
+    height:250px;
+
+
+    background:#ffeaf0;
+
+
+    border-radius:50%;
+
+
+    filter:blur(70px);
+
+
+    top:180px;
+
+    left:-80px;
+
+
+    z-index:-1;
+
+
+}
+
+
+
+
+.seaHero::after{
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:400px;
+
+    height:400px;
+
+
+    background:#dff4f7;
+
+
+    border-radius:50%;
+
+
+    filter:blur(90px);
+
+
+    right:-150px;
+
+
+    top:600px;
+
+
+    z-index:-1;
+
+
+}
+
+
+
+
+
+/*=========================================
+BEACH DECORATION
+=========================================*/
+
+
+.beach:nth-of-type(even)::before{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:180px;
+
+
+    height:180px;
+
+
+    background:#fff1f5;
+
+
+    border-radius:50%;
+
+
+    filter:blur(50px);
+
+
+    right:-80px;
+
+
+    top:100px;
+
+
+    z-index:-1;
+
+
+}
+
+
+
+
+.beach:nth-of-type(odd)::before{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:200px;
+
+
+    height:200px;
+
+
+    background:#e7f8fb;
+
+
+    border-radius:50%;
+
+
+    filter:blur(60px);
+
+
+    left:-100px;
+
+
+    bottom:100px;
+
+
+    z-index:-1;
+
+
+}
+
+
+
+
+
+
+
+/*=========================================
+SCROLL LINE
+=========================================*/
+
+
+.seaHeroText::after{
+
+
+    content:"";
+
+
+    display:block;
+
+
+    width:1px;
+
+
+    height:90px;
+
+
+    background:#78bfd0;
+
+
+    margin-top:70px;
+
+
+    opacity:.5;
+
+
+}
+
+
+
+
+
+
+
+/*=========================================
+TABLET
+=========================================*/
+
+
+@media(max-width:1100px){
+
+
+
+.seaHero{
+
+
+    flex-direction:column;
+
+
+    padding-top:170px;
+
+
+}
+
+
+
+.seaHeroText{
+
+
+    width:100%;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.seaHeroImage{
+
+
+    width:90%;
+
+
+}
+
+
+
+.beachContent{
+
+
+    flex-direction:column;
+
+
+    gap:70px;
+
+
+}
+
+
+
+.beach.reverse .beachContent{
+
+
+    flex-direction:column;
+
+
+}
+
+
+
+.beachImages,
+
+
+.beachText{
+
+
+    width:100%;
+
+
+}
+
+
+
+.mainPhoto{
+
+
+    width:90%;
+
+
+}
+
+
+
+.subPhoto{
+
+
+    width:200px;
+
+
+    height:200px;
+
+
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+/*=========================================
+SMART PHONE
+=========================================*/
+
+
+@media(max-width:768px){
+
+
+
+.header{
+
+
+    height:80px;
+
+
+    padding:0 5%;
+
+
+}
+
+
+
+.logo{
+
+
+    font-size:35px;
+
+
+}
+
+
+
+.nav ul{
+
+
+    gap:15px;
+
+
+}
+
+
+
+.nav a{
+
+
+    font-size:11px;
+
+
+}
+
+
+
+.seaHero h1{
+
+
+    font-size:50px;
+
+
+}
+
+
+
+.seaHero p{
+
+
+    font-size:14px;
+
+
+}
+
+
+
+.seaHeroImage img{
+
+
+    height:420px;
+
+
+    border-radius:30px;
+
+
+}
+
+
+
+
+.breadcrumb{
+
+
+    margin-top:80px;
+
+
+}
+
+
+
+
+
+.beach{
+
+
+    margin:140px auto;
+
+
+}
+
+
+
+.number{
+
+
+    font-size:90px;
+
+
+    top:-50px;
+
+
+}
+
+
+
+.mainPhoto{
+
+
+    height:420px;
+
+
+    width:100%;
+
+
+    border-radius:30px;
+
+
+}
+
+
+
+.subPhoto{
+
+
+    width:140px;
+
+
+    height:140px;
+
+
+    bottom:-30px;
+
+
+}
+
+
+
+.beachText h2{
+
+
+    font-size:45px;
+
+
+}
+
+
+
+.beachText>p{
+
+
+    line-height:2;
+
+
+}
+
+
+
+.info{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+
+.nextInner h2{
+
+
+    font-size:40px;
+
+
+}
+
+
+
+.footer ul{
+
+
+    flex-direction:column;
+
+
+    gap:20px;
+
+
+}
+
+
+
+
+}
+
+
+
+
+
+/*=========================================
+SMALL PHONE
+=========================================*/
+
+
+@media(max-width:480px){
+
+
+.nav{
+
+    display:none;
+
+}
+
+
+
+.seaHero h1{
+
+
+    font-size:40px;
+
+
+}
+
+
+
+.heroSub{
+
+
+    font-size:14px;
+
+
+}
+
+
+
+.nextSection{
+
+
+    padding:100px 0;
+
+
+}
+
+
+
+}
+
+/*=========================================
+DESIGN UPGRADE
+参考サイト風装飾
+=========================================*/
+
+/*-------------------------
+セクション共通
+-------------------------*/
+
+section{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/*-------------------------
+水彩背景①
+-------------------------*/
+
+section::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:260px;
+
+    height:260px;
+
+    left:-120px;
+
+    top:80px;
+
+    border-radius:50%;
+
+    background:#dff5f8;
+
+    filter:blur(70px);
+
+    opacity:.7;
+
+    z-index:-1;
+
+}
+
+/*-------------------------
+水彩背景②
+-------------------------*/
+
+section::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+
+    height:220px;
+
+    right:-100px;
+
+    bottom:60px;
+
+    border-radius:50%;
+
+    background:#fff3e7;
+
+    filter:blur(60px);
+
+    opacity:.65;
+
+    z-index:-1;
+
+}
+
+/*-------------------------
+偶数セクションだけ色変更
+-------------------------*/
+
+section:nth-of-type(even)::before{
+
+    background:#e9f8ef;
+
+}
+
+section:nth-of-type(even)::after{
+
+    background:#fff7df;
+
+}
+
+/*-------------------------
+3つおきに色変更
+-------------------------*/
+
+section:nth-of-type(3n)::before{
+
+    background:#f5ecff;
+
+}
+
+section:nth-of-type(3n)::after{
+
+    background:#e8f7ff;
+
+}
+
+/*-------------------------
+余白を増やす
+-------------------------*/
+
+section{
+
+    padding-top:120px;
+
+    padding-bottom:120px;
+
+}
+
+/* Heroはそのまま */
+
+.hero,
+.seaHero,
+.spotHero{
+
+    padding-top:220px;
+
+}
+
+/*-------------------------
+写真を少し浮かせる
+-------------------------*/
+
+.mainPhoto,
+.subPhoto{
+
+    transition:.45s ease;
+
+}
+
+.mainPhoto:hover{
+
+    transform:
+    translateY(-10px)
+    rotate(-1deg);
+
+}
+
+.subPhoto:hover{
+
+    transform:
+    translateY(-10px)
+    rotate(2deg);
+
+}
+
+/*-------------------------
+カードをガラス風に
+-------------------------*/
+
+.info div{
+
+    border:1px solid rgba(255,255,255,.8);
+
+    backdrop-filter:blur(12px);
+
+}
+
+/*-------------------------
+ほんのり手描き風ライン
+-------------------------*/
+
+.hero,
+.seaHero,
+.spotHero{
+
+    background-image:
+
+    repeating-linear-gradient(
+
+        -10deg,
+
+        transparent 0,
+
+        transparent 26px,
+
+        rgba(120,191,208,.04) 27px,
+
+        transparent 28px
+
+    );
+
+}
+
+/*-------------------------
+画像をさらに立体的に
+-------------------------*/
+
+.mainPhoto{
+
+    box-shadow:
+
+    0 30px 70px rgba(0,0,0,.12);
+
+}
+
+.subPhoto{
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.18);
+
+}
+
+/*-------------------------
+セクションをふわっと切り替え
+-------------------------*/
+
+.beach,
+.spot{
+
+    border-radius:50px;
+
+}
